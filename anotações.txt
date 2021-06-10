@@ -1,0 +1,62 @@
+Componentes
+- classe
+- seletor
+- template
+
+Property Binding
+- Vincula um valor a um elemento do DOM
+- Usa colchetes. [...]
+- One way binding. Componente -> Template
+
+Diretivas
+- Tipos
+	- Componentes
+	- Estruturais
+	- Atributos
+
+Eventos
+- Atribuir um método do componente a um evento
+- Usamos parêntesis (...)
+- Passamos o evento por $event
+
+Serviços
+- Classes para injetar em componentes e em outros serviços
+- Usados para encapsular acesso a APIs de back-end
+- Podem ser singleton ou parte de aplicação
+- Escopos:
+	- Módulo: Disponível para todas as classes declaradas no módulo - providers: []
+	- Componentes e seus filhos: Disponível para o componente e seus componentes filhos - providers: []
+	- Componente: Somente Componente - viewProviders: []
+
+
+Pipes
+- Transformam conteúdos
+- Usamos: propriedade | Pipe
+- Para passar parâmetros para um Pipe usamos ":" - propriedade | Pipe: parâmetro
+- Exemplos:
+	- json
+	- uppercase
+	- lowercase
+	- percent
+	- date: formato
+	- currency: iso
+	- slice: limite
+- Podemos combinar pipes com outros
+
+Forms
+
+
+- NgModel
+	- Valid/Invalid
+	- Pristine/Dirty (Usuário modifica o campo)
+	- Untouched/Touched (Usuário acessa o campo)
+
+	- Validators
+		- Required
+		- Pattern - Regex
+		- MinLength/MaxLength
+
+	- Classes CSS
+		- ng-valid/ng-invalid
+		- ng-pristine/ng-dirty
+		- ng-untouched/ng-touched
